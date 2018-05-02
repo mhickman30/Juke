@@ -19,14 +19,10 @@ class User {
     static let DocumentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
     static let ArchiveURL = DocumentsDirectory.appendingPathComponent("user").appendingPathExtension("plist")
     
-
-}
-
-
-class Host: User {
-    
-}
-
-class Guest: User {
-    
+    init(username: String, password: String, personalInfo: String, preferences: String) {
+        self.username = username
+        self.password = password
+        self.personalInfo = personalInfo
+        self.preferences = preferences
+    }
 }
