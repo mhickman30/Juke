@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FABE518209A578A00A9020A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FABE517209A578A00A9020A /* User.swift */; };
 		41A0A337208E7DF00083669E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0A336208E7DF00083669E /* AppDelegate.swift */; };
 		41A0A339208E7DF00083669E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0A338208E7DF00083669E /* ViewController.swift */; };
 		41A0A33C208E7DF00083669E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0A33A208E7DF00083669E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FABE517209A578A00A9020A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		41A0A333208E7DF00083669E /* Juke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A0A336208E7DF00083669E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A0A338208E7DF00083669E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		41A0A32A208E7DF00083669E = {
 			isa = PBXGroup;
 			children = (
+				3FABE517209A578A00A9020A /* User.swift */,
 				41A0A335208E7DF00083669E /* Juke */,
 				41A0A334208E7DF00083669E /* Products */,
 			);
@@ -138,6 +141,7 @@
 			files = (
 				41A0A339208E7DF00083669E /* ViewController.swift in Sources */,
 				41A0A337208E7DF00083669E /* AppDelegate.swift in Sources */,
+				3FABE518209A578A00A9020A /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
