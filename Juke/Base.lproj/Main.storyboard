@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoMaruGothProN.ttc">
+            <string>HiraMaruProN-W4</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -18,24 +23,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-BH-60N">
-                                <rect key="frame" x="151" y="498" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign In"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-BH-60N">
+                                <rect key="frame" x="100" y="347" width="175" height="30"/>
+                                <state key="normal" title="Log In"/>
                                 <connections>
                                     <segue destination="CaJ-Zc-Xhf" kind="showDetail" identifier="Sign In" id="Zbh-zG-uff"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Hv-Edv">
-                                <rect key="frame" x="158" y="536" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Hv-Edv">
+                                <rect key="frame" x="100" y="407" width="175" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="dfT-gj-3aZ" kind="showDetail" identifier="Sign Up" id="Ijf-53-TrV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRa-fy-gqF">
+                                <rect key="frame" x="144" y="90" width="87" height="39"/>
+                                <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="39"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPy-md-ILO">
+                                <rect key="frame" x="8" y="249" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cK-8l-Zxr">
+                                <rect key="frame" x="8" y="287" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Fg-Hv-Edv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5D2-rn-13B"/>
+                            <constraint firstItem="pPy-md-ILO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="80r-38-x5p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o0V-BH-60N" secondAttribute="trailing" constant="100" id="DAY-Vf-RKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pPy-md-ILO" secondAttribute="trailing" constant="8" id="Jgh-UE-uF9"/>
+                            <constraint firstItem="1cK-8l-Zxr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KKZ-p7-VXA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1cK-8l-Zxr" secondAttribute="trailing" constant="8" id="M0d-AW-1n3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Fg-Hv-Edv" secondAttribute="trailing" constant="100" id="SR4-IP-QgJ"/>
+                            <constraint firstItem="pPy-md-ILO" firstAttribute="top" secondItem="vRa-fy-gqF" secondAttribute="bottom" constant="120" id="UVf-hD-2m7"/>
+                            <constraint firstItem="1cK-8l-Zxr" firstAttribute="top" secondItem="pPy-md-ILO" secondAttribute="bottom" constant="8" id="UXr-VH-juA"/>
+                            <constraint firstItem="3Fg-Hv-Edv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="crt-Na-oSG"/>
+                            <constraint firstItem="o0V-BH-60N" firstAttribute="top" secondItem="1cK-8l-Zxr" secondAttribute="bottom" constant="30" id="dRj-yY-kkD"/>
+                            <constraint firstItem="3Fg-Hv-Edv" firstAttribute="top" secondItem="o0V-BH-60N" secondAttribute="bottom" constant="30" id="etI-xK-daM"/>
+                            <constraint firstItem="o0V-BH-60N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hB9-iL-Ecj"/>
+                            <constraint firstItem="o0V-BH-60N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="icn-iK-l71"/>
+                            <constraint firstItem="vRa-fy-gqF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qQl-Ld-S2i"/>
+                            <constraint firstItem="vRa-fy-gqF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="qTM-uW-odJ"/>
+                            <constraint firstItem="1cK-8l-Zxr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="sjw-cV-Fmm"/>
+                            <constraint firstItem="pPy-md-ILO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="xWX-Sr-kVc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
