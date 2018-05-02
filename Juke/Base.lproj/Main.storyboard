@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Juke" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="Juke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,13 +27,15 @@
                                 <rect key="frame" x="100" y="347" width="175" height="30"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <segue destination="CaJ-Zc-Xhf" kind="showDetail" identifier="Sign In" id="Zbh-zG-uff"/>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWY-jA-Ecg"/>
+                                    <segue destination="r1o-1E-ytE" kind="showDetail" identifier="Log In" id="GH3-MI-SCS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Hv-Edv">
                                 <rect key="frame" x="100" y="407" width="175" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
+                                    <action selector="signupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ZZ-GD-LWa"/>
                                     <segue destination="dfT-gj-3aZ" kind="showDetail" identifier="Sign Up" id="Ijf-53-TrV"/>
                                 </connections>
                             </button>
@@ -79,15 +81,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="1cK-8l-Zxr" id="znZ-VQ-6rR"/>
+                        <outlet property="usernameTextField" destination="pPy-md-ILO" id="rh1-Zr-hAJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="281" y="67"/>
         </scene>
-        <!--View Controller-->
+        <!--SignUp ViewController-->
         <scene sceneID="IwM-xi-x1j">
             <objects>
-                <viewController id="dfT-gj-3aZ" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qhM-by-otm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="SignUp ViewController" id="dfT-gj-3aZ" customClass="SignUpViewController" customModule="Juke" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gW6-FS-hBT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,34 +112,8 @@
                         <viewLayoutGuide key="safeArea" id="gPe-Jz-73P"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qhM-by-otm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118" y="910"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="XlC-x9-Kvj">
-            <objects>
-                <viewController id="CaJ-Zc-Xhf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="heV-LN-33Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRi-um-3i0">
-                                <rect key="frame" x="146" y="542" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="r1o-1E-ytE" kind="showDetail" identifier="Login" id="WBV-i1-YS6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="Did-07-aVB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fo5-fr-e0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="757.60000000000002" y="909.89505247376314"/>
+            <point key="canvasLocation" x="-119.2" y="909.89505247376314"/>
         </scene>
         <!--Settings-->
         <scene sceneID="tZM-PF-uS2">
@@ -144,7 +125,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Azi-Ub-qFM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="JIu-6K-8hR"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="JIu-6K-8hR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AfT-IP-RNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,7 +141,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="KfC-HT-DsV"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="v4O-xP-rH1"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="v4O-xP-rH1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1I-qJ-Nbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,7 +151,7 @@
         <scene sceneID="oVR-rv-kOQ">
             <objects>
                 <tabBarController id="r1o-1E-ytE" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KSY-ca-GoI">
+                    <tabBar key="tabBar" contentMode="scaleToFill" restorationIdentifier="Profile" insetsLayoutMarginsFromSafeArea="NO" id="KSY-ca-GoI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
