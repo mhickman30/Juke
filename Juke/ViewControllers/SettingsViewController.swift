@@ -1,35 +1,29 @@
 //
-//  LogInViewController.swift
+//  SettingsViewController.swift
 //  Juke
 //
-//  Created by Student on 5/2/18.
+//  Created by Student on 5/3/18.
 //  Copyright © 2018 Matt Hickman. All rights reserved.
 //
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
     
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    
-    
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
-    }
-    
-    @IBAction func signupButtonPressed(_ sender: UIButton) {
-    }
-    
+    var user: User?
+    var username: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        usernameLabel.text = username
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
+        // Dispose of any resources that can be recreated.
     }
     
 
