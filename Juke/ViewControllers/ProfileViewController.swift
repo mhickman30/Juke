@@ -11,6 +11,8 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var firstnameLabel: UILabel!
+    @IBOutlet weak var lastnameLabel: UILabel!
     
     var user: User?
     
@@ -18,6 +20,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         usernameLabel.text = user?.username
+        firstnameLabel.text = user?.firstName
+        lastnameLabel.text = user?.lastName
     }
 
     override func didReceiveMemoryWarning() {
