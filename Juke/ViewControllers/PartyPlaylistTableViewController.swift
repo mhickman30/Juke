@@ -1,14 +1,14 @@
 //
-//  SignUpTableViewController.swift
+//  PartyPlaylistTableViewController.swift
 //  Juke
 //
-//  Created by Matt Hickman on 5/2/18.
+//  Created by Student on 5/4/18.
 //  Copyright © 2018 Matt Hickman. All rights reserved.
 //
 
 import UIKit
 
-class SignUpTableViewController: UITableViewController {
+class PartyPlaylistTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +22,20 @@ class SignUpTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

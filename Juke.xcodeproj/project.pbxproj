@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1D3F94209BB55B003724D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D3F93209BB55B003724D8 /* ProfileViewController.swift */; };
+		3F1D3F97209BB6E9003724D8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D3F96209BB6E9003724D8 /* SettingsViewController.swift */; };
+		3F9B734420A0E21E008DF861 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F9B734320A0E21E008DF861 /* GoogleService-Info.plist */; };
 		3FABE518209A578A00A9020A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FABE517209A578A00A9020A /* User.swift */; };
 		3FABE51A209A5E0100A9020A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FABE519209A5E0100A9020A /* LogInViewController.swift */; };
+		3FEF2750209CFAC900C01A71 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF274F209CFAC900C01A71 /* Party.swift */; };
+		3FEF2752209D015D00C01A71 /* PartyPlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */; };
+		3FEF2754209D07CD00C01A71 /* NewSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */; };
 		41A0A337208E7DF00083669E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0A336208E7DF00083669E /* AppDelegate.swift */; };
 		41A0A33C208E7DF00083669E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0A33A208E7DF00083669E /* Main.storyboard */; };
 		41A0A33E208E7DF00083669E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41A0A33D208E7DF00083669E /* Assets.xcassets */; };
@@ -17,8 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1D3F93209BB55B003724D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3F1D3F96209BB6E9003724D8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3F9B734320A0E21E008DF861 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3FABE517209A578A00A9020A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FABE519209A5E0100A9020A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3FEF274F209CFAC900C01A71 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyPlaylistTableViewController.swift; sourceTree = "<group>"; };
+		3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSongTableViewController.swift; sourceTree = "<group>"; };
 		41A0A333208E7DF00083669E /* Juke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A0A336208E7DF00083669E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A0A33B208E7DF00083669E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,6 +51,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F1D3F95209BB624003724D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */,
+				3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */,
+				3FABE519209A5E0100A9020A /* LogInViewController.swift */,
+				3F1D3F96209BB6E9003724D8 /* SettingsViewController.swift */,
+				3F1D3F93209BB55B003724D8 /* ProfileViewController.swift */,
+				41CE9CED209A61E0007C0D42 /* SignUpTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3FEF274D209CFA6D00C01A71 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3FABE517209A578A00A9020A /* User.swift */,
+				3FEF274F209CFAC900C01A71 /* Party.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		41A0A32A208E7DF00083669E = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +92,14 @@
 		41A0A335208E7DF00083669E /* Juke */ = {
 			isa = PBXGroup;
 			children = (
+				3FEF274D209CFA6D00C01A71 /* Data */,
 				41A0A336208E7DF00083669E /* AppDelegate.swift */,
-				3FABE517209A578A00A9020A /* User.swift */,
 				41A0A33A208E7DF00083669E /* Main.storyboard */,
-				41CE9CED209A61E0007C0D42 /* SignUpTableViewController.swift */,
-				3FABE519209A5E0100A9020A /* LogInViewController.swift */,
+				3F1D3F95209BB624003724D8 /* ViewControllers */,
 				41A0A33D208E7DF00083669E /* Assets.xcassets */,
 				41A0A33F208E7DF00083669E /* LaunchScreen.storyboard */,
 				41A0A342208E7DF00083669E /* Info.plist */,
+				3F9B734320A0E21E008DF861 /* GoogleService-Info.plist */,
 			);
 			path = Juke;
 			sourceTree = "<group>";
@@ -130,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A0A341208E7DF00083669E /* LaunchScreen.storyboard in Resources */,
+				3F9B734420A0E21E008DF861 /* GoogleService-Info.plist in Resources */,
 				41A0A33E208E7DF00083669E /* Assets.xcassets in Resources */,
 				41A0A33C208E7DF00083669E /* Main.storyboard in Resources */,
 			);
@@ -143,9 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FABE51A209A5E0100A9020A /* LogInViewController.swift in Sources */,
+				3FEF2754209D07CD00C01A71 /* NewSongTableViewController.swift in Sources */,
 				41A0A337208E7DF00083669E /* AppDelegate.swift in Sources */,
+				3FEF2752209D015D00C01A71 /* PartyPlaylistTableViewController.swift in Sources */,
+				3F1D3F94209BB55B003724D8 /* ProfileViewController.swift in Sources */,
+				3FEF2750209CFAC900C01A71 /* Party.swift in Sources */,
 				3FABE518209A578A00A9020A /* User.swift in Sources */,
 				41CE9CEE209A61E0007C0D42 /* SignUpTableViewController.swift in Sources */,
+				3F1D3F97209BB6E9003724D8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3DG7V9329;
 				INFOPLIST_FILE = Juke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hickman.Juke;
@@ -297,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3DG7V9329;
 				INFOPLIST_FILE = Juke/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Hickman.Juke;
