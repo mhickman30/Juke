@@ -88,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="67"/>
+            <point key="canvasLocation" x="280.80000000000001" y="66.11694152923539"/>
         </scene>
         <!--Sign Up Table View Controller-->
         <scene sceneID="JPb-CP-GsA">
@@ -466,6 +466,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="2VV-Ph-rIj"/>
-        <segue reference="XBD-q8-Th5"/>
+        <segue reference="f0M-hF-FJE"/>
     </inferredMetricsTieBreakers>
 </document>
