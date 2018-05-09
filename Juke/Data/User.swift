@@ -62,7 +62,7 @@ class User: NSObject, NSCoding {
         aCoder.encode(lastName, forKey: PropertyKey.lastName)
     }
     
-    static func loadToDos() -> [User]?  {
+    static func loadUsers() -> [User]?  {
         return NSKeyedUnarchiver.unarchiveObject(withFile: User.ArchiveURL.path) as? [User]
     }
     
