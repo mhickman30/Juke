@@ -443,7 +443,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6A-Ju-ndh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-631" y="2693"/>
+            <point key="canvasLocation" x="28" y="2731"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oVR-rv-kOQ">
