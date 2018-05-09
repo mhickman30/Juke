@@ -10,14 +10,14 @@ import UIKit
 
 class LogInViewController: UIViewController {
     
-    var users: [User]
+    var users: [User?]
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        if let savedUsers = User.loadToDos() {
+        if let savedUsers = User.loadUsers() {
             users = savedUsers
         } else {
             print("no stored users")
@@ -27,8 +27,6 @@ class LogInViewController: UIViewController {
                 return true
             }
         }
-        
-        
     }
     
     @IBAction func signupButtonPressed(_ sender: UIButton) {
