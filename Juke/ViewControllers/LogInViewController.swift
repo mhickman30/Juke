@@ -9,13 +9,26 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-
+    
+    var users: [User]
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        if let savedUsers = User.loadToDos() {
+            users = savedUsers
+        } else {
+            print("no stored users")
+        }
+        for user in savedUsers {
+            if user.userName == usernameTextField && user.password == passwordTextField {
+                return true
+            }
+        }
+        
+        
     }
     
     @IBAction func signupButtonPressed(_ sender: UIButton) {
