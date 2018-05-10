@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3F1D3F94209BB55B003724D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D3F93209BB55B003724D8 /* ProfileViewController.swift */; };
+		3F752E5520A4FAAA00CA332A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F752E5420A4FAAA00CA332A /* Media.xcassets */; };
 		3FABE518209A578A00A9020A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FABE517209A578A00A9020A /* User.swift */; };
 		3FABE51A209A5E0100A9020A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FABE519209A5E0100A9020A /* LogInViewController.swift */; };
 		3FEF2750209CFAC900C01A71 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF274F209CFAC900C01A71 /* Party.swift */; };
 		3FEF2752209D015D00C01A71 /* PartyPlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */; };
 		3FEF2754209D07CD00C01A71 /* NewSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */; };
 		410B957B20A3997F00C728E3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B957A20A3997F00C728E3 /* SettingsTableViewController.swift */; };
-		410B957D20A39C5800C728E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410B957C20A39C5800C728E3 /* Assets.xcassets */; };
 		41A0A337208E7DF00083669E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0A336208E7DF00083669E /* AppDelegate.swift */; };
 		41A0A33C208E7DF00083669E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0A33A208E7DF00083669E /* Main.storyboard */; };
 		41A0A341208E7DF00083669E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A0A33F208E7DF00083669E /* LaunchScreen.storyboard */; };
@@ -23,13 +23,13 @@
 
 /* Begin PBXFileReference section */
 		3F1D3F93209BB55B003724D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3F752E5420A4FAAA00CA332A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Juke/Media.xcassets; sourceTree = SOURCE_ROOT; };
 		3FABE517209A578A00A9020A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3FABE519209A5E0100A9020A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3FEF274F209CFAC900C01A71 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyPlaylistTableViewController.swift; sourceTree = "<group>"; };
 		3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSongTableViewController.swift; sourceTree = "<group>"; };
 		410B957A20A3997F00C728E3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
-		410B957C20A39C5800C728E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		41A0A333208E7DF00083669E /* Juke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41A0A336208E7DF00083669E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41A0A33B208E7DF00083669E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				3FEF274D209CFA6D00C01A71 /* Data */,
 				3F1D3F95209BB624003724D8 /* ViewControllers */,
 				41A0A33F208E7DF00083669E /* LaunchScreen.storyboard */,
-				410B957C20A39C5800C728E3 /* Assets.xcassets */,
+				3F752E5420A4FAAA00CA332A /* Media.xcassets */,
 				41A0A342208E7DF00083669E /* Info.plist */,
 			);
 			path = Juke;
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41A0A341208E7DF00083669E /* LaunchScreen.storyboard in Resources */,
-				410B957D20A39C5800C728E3 /* Assets.xcassets in Resources */,
+				3F752E5520A4FAAA00CA332A /* Media.xcassets in Resources */,
 				41A0A33C208E7DF00083669E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

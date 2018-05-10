@@ -51,7 +51,7 @@ class User: NSObject, NSCoding {
         let firstName = aDecoder.decodeObject(forKey: PropertyKey.firstName) as? String
         let lastName = aDecoder.decodeObject(forKey: PropertyKey.lastName) as? String
         
-        self.init(username: username, password: password, email: email, firstname: firstName, lastname: lastName)
+        self.init(username: username, password: password, email: email as! String, firstname: firstName!, lastname: lastName!)
     }
     
     func encode(with aCoder: NSCoder) {

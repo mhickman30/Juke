@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoMaruGothProN.ttc">
+            <string>HiraMaruProN-W4</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -28,6 +33,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Hv-Edv">
                                 <rect key="frame" x="100" y="407" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ZZ-GD-LWa"/>
@@ -52,6 +59,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7D-hr-m6I">
+                                <rect key="frame" x="100" y="378" width="184" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -83,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="121"/>
+            <point key="canvasLocation" x="280.80000000000001" y="120.98950524737631"/>
         </scene>
         <!--Sign Up Table View Controller-->
         <scene sceneID="JPb-CP-GsA">
@@ -411,7 +425,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="58Y-XO-ggk">
                                 <rect key="frame" x="0.0" y="40" width="375" height="607"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man (1)" translatesAutoresizingMaskIntoConstraints="NO" id="BO9-t2-41Q">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="BO9-t2-41Q">
                                         <rect key="frame" x="112.5" y="0.0" width="150" height="152"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="Gik-9y-fqV"/>
@@ -459,6 +473,12 @@
                         <viewLayoutGuide key="safeArea" id="KfC-HT-DsV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="v4O-xP-rH1"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="kMf-Ld-zDe" id="M8t-WA-CBg"/>
+                        <outlet property="firstnameLabel" destination="C5v-ec-nZC" id="h2J-jj-bW5"/>
+                        <outlet property="lastnameLabel" destination="Wcw-sW-fyp" id="NFN-FS-9ED"/>
+                        <outlet property="usernameLabel" destination="7qp-Sp-Tyi" id="yC8-Si-amA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1I-qJ-Nbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -485,9 +505,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="man (1)" width="512" height="512"/>
+        <image name="man" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oCg-qh-wRj"/>
+        <segue reference="OnT-fD-qnB"/>
     </inferredMetricsTieBreakers>
 </document>

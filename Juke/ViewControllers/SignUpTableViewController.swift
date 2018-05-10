@@ -91,7 +91,8 @@ class SignUpTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
-        if let profileViewController = segue.destination as? ProfileViewController {
+        if let tabViewController = segue.destination as? UITabBarController{
+            let profileViewController = tabViewController.viewControllers!.first as? ProfileViewController 
         
             let firstname = firstNameTextField.text
             let lastname = lastNameTextField.text
@@ -99,7 +100,7 @@ class SignUpTableViewController: UITableViewController {
             let password = passwordTextField.text
             let email = emailTextField.text
             
-            profileViewController.user = User(username: username!, password: password!, personalInfo: [], email: email!, firstname: firstname!, lastname: lastname! )
+            profileViewController?.user = User(username: username!, password: password!, email: email!, firstname: firstname!, lastname: lastname!)
             }
         }
     

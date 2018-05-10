@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var firstnameLabel: UILabel!
     @IBOutlet weak var lastnameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     
     var user: User?
     
@@ -22,6 +23,7 @@ class ProfileViewController: UIViewController {
         usernameLabel.text = user?.username
         firstnameLabel.text = user?.firstName
         lastnameLabel.text = user?.lastName
+        emailLabel.text = user?.email
     }
 
     override func didReceiveMemoryWarning() {
