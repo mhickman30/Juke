@@ -40,5 +40,4 @@ class Song {
         self.downvotes = 0
     }
     
-    
 }
