@@ -11,6 +11,7 @@ import UIKit
 class LogInViewController: UIViewController {
     
     var users: [User?] = []
+    var realUser: User?
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -22,10 +23,11 @@ class LogInViewController: UIViewController {
             for user in savedUsers {
                 if user.username == usernameTextField.text && user.password == passwordTextField.text {
                     users.append(user)
+                    realUser = user
                 }
             }
         } else {
-            print("no stored users")
+            viewDidLoad()
         }
         
     }
