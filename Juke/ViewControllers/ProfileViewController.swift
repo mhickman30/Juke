@@ -15,12 +15,15 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var lastnameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
+    var username: String?
+    var password: String?
+    
     var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        usernameLabel.text = user?.username
+        usernameLabel.text = "@" + username!
         firstnameLabel.text = user?.firstName
         lastnameLabel.text = user?.lastName
         emailLabel.text = user?.email

@@ -9,7 +9,6 @@
 
 import Foundation
 
-
 class Party {
     
     var name: String
@@ -23,7 +22,6 @@ class Party {
         self.song = song
         self.description = description
     }
-    
 }
 
 class Song {
@@ -39,5 +37,4 @@ class Song {
         self.upvotes = 0
         self.downvotes = 0
     }
-    
 }
