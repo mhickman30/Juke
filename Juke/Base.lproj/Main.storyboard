@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-BH-60N">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0V-BH-60N">
                                 <rect key="frame" x="100" y="347" width="175" height="30"/>
                                 <color key="backgroundColor" red="0.20358675009246294" green="0.51185641916905966" blue="0.7745143728062176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Log In">
@@ -29,7 +29,7 @@
                                     <segue destination="r1o-1E-ytE" kind="show" id="oCg-qh-wRj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Hv-Edv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fg-Hv-Edv">
                                 <rect key="frame" x="100" y="407" width="175" height="30"/>
                                 <color key="backgroundColor" red="0.7745143728062176" green="0.24000230050472632" blue="0.21468321412032235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,13 +39,13 @@
                                     <segue destination="lQO-TL-54D" kind="presentation" id="TuD-9i-1Xu"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPy-md-ILO">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPy-md-ILO">
                                 <rect key="frame" x="8" y="249" width="359" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cK-8l-Zxr">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cK-8l-Zxr">
                                 <rect key="frame" x="8" y="287" width="359" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -58,24 +58,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-05-14 at 2.01.26 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Ew3-gP-teX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-05-14 at 2.01.26 PM" translatesAutoresizingMaskIntoConstraints="NO" id="Ew3-gP-teX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="241"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="241" id="HqU-MT-G7e"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.12427905946969986" green="0.060866214334964752" blue="0.41910064220428467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3Fg-Hv-Edv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5D2-rn-13B"/>
+                            <constraint firstItem="pPy-md-ILO" firstAttribute="top" secondItem="Ew3-gP-teX" secondAttribute="bottom" constant="8" symbolic="YES" id="5kR-LO-PRp"/>
                             <constraint firstItem="pPy-md-ILO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="80r-38-x5p"/>
+                            <constraint firstItem="Ew3-gP-teX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8xY-K1-IbF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o0V-BH-60N" secondAttribute="trailing" constant="100" id="DAY-Vf-RKc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pPy-md-ILO" secondAttribute="trailing" constant="8" id="Jgh-UE-uF9"/>
                             <constraint firstItem="1cK-8l-Zxr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KKZ-p7-VXA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1cK-8l-Zxr" secondAttribute="trailing" constant="8" id="M0d-AW-1n3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Fg-Hv-Edv" secondAttribute="trailing" constant="100" id="SR4-IP-QgJ"/>
+                            <constraint firstItem="Ew3-gP-teX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="T9z-Ea-nbU"/>
                             <constraint firstItem="1cK-8l-Zxr" firstAttribute="top" secondItem="pPy-md-ILO" secondAttribute="bottom" constant="8" id="UXr-VH-juA"/>
                             <constraint firstItem="3Fg-Hv-Edv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="crt-Na-oSG"/>
                             <constraint firstItem="o0V-BH-60N" firstAttribute="top" secondItem="1cK-8l-Zxr" secondAttribute="bottom" constant="30" id="dRj-yY-kkD"/>
                             <constraint firstItem="3Fg-Hv-Edv" firstAttribute="top" secondItem="o0V-BH-60N" secondAttribute="bottom" constant="30" id="etI-xK-daM"/>
+                            <constraint firstItem="Ew3-gP-teX" firstAttribute="centerX" secondItem="pPy-md-ILO" secondAttribute="centerX" id="h5X-ba-CQD"/>
                             <constraint firstItem="o0V-BH-60N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hB9-iL-Ecj"/>
                             <constraint firstItem="o0V-BH-60N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="icn-iK-l71"/>
                             <constraint firstItem="1cK-8l-Zxr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="sjw-cV-Fmm"/>
