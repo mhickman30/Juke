@@ -432,7 +432,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0i-0e-uK7">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+                                                <rect key="frame" x="100" y="0.0" width="175" height="152"/>
                                                 <state key="normal" title="Change Picture "/>
                                                 <connections>
                                                     <action selector="changePictureButtonTapped:" destination="5DH-Ty-s58" eventType="touchUpInside" id="7K0-sE-PfM"/>
@@ -440,8 +440,8 @@
                                             </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="D0i-0e-uK7" firstAttribute="leading" secondItem="hw9-RA-7zy" secondAttribute="leading" id="9Lt-sh-qnF"/>
-                                            <constraint firstAttribute="trailing" secondItem="D0i-0e-uK7" secondAttribute="trailing" id="R1A-1Z-XFU"/>
+                                            <constraint firstItem="D0i-0e-uK7" firstAttribute="leading" secondItem="hw9-RA-7zy" secondAttribute="leading" constant="100" id="9Lt-sh-qnF"/>
+                                            <constraint firstAttribute="trailing" secondItem="D0i-0e-uK7" secondAttribute="trailing" constant="100" id="R1A-1Z-XFU"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9xl-dc-l6e">
