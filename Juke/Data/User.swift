@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 class User: NSObject, NSCoding {
@@ -16,13 +17,15 @@ class User: NSObject, NSCoding {
     var email: String
     var firstName: String
     var lastName: String
+    var imageData: Data?
     
-    init(username: String, password: String, email: String, firstname: String, lastname: String) {
+    init(username: String, password: String, email: String, firstname: String, lastname: String, imageData: Data? = nil) {
         self.username = username
         self.password = password
         self.email = email
         self.firstName = firstname
         self.lastName = lastname
+        self.imageData = imageData
     }
     
     struct PropertyKey {

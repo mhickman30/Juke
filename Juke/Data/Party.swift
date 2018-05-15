@@ -13,14 +13,16 @@ class Party {
     
     var name: String
     var playlist: [String]
-    var song: Song
+    //var song: Song
     var description: String
+    var hostName: String?
     
-    init(name: String, playlist: [String], song: Song, description: String) {
+    init(name: String, playlist: [String], description: String, hostName: String) {
         self.name = name
         self.playlist = playlist
-        self.song = song
+        //self.song = song
         self.description = description
+        self.hostName = hostName
     }
 }
 
