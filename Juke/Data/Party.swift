@@ -16,6 +16,7 @@ class Party {
     //var song: Song
     var description: String
     var hostName: String?
+    var imageData: Data?
     
     init(name: String, playlist: [String], description: String, hostName: String) {
         self.name = name
@@ -32,11 +33,13 @@ class Song {
     var artist: String
     var upvotes: Int
     var downvotes: Int
+    var imageData: Data?
     
-    init(title: String, artist: String, upvotes: Int, downvotes: Int){
+    init(title: String, artist: String, upvotes: Int, downvotes: Int, imageData: Data?){
         self.title = title
         self.artist = artist
         self.upvotes = 0
         self.downvotes = 0
+        self.imageData = imageData
     }
 }
