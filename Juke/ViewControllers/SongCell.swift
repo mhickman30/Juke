@@ -19,4 +19,9 @@ class SongCell: UITableViewCell {
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var songIcon: UIImageView!
     
+    @IBOutlet weak var votesLabel: UILabel!
+
+    @IBAction func voteStepper(_ sender: UIStepper) {
+    }
+    
 }
