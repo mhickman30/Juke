@@ -757,6 +757,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playlistName" destination="7bu-va-rRi" id="io7-F8-UGJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2H-3y-xih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -901,6 +904,7 @@
         <image name="music-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jHZ-4k-gRa"/>
         <segue reference="jCK-kF-FED"/>
         <segue reference="OnT-fD-qnB"/>
         <segue reference="VhB-ns-QHv"/>

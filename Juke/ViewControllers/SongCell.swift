@@ -22,6 +22,7 @@ class SongCell: UITableViewCell {
     @IBOutlet weak var votesLabel: UILabel!
 
     @IBAction func voteStepper(_ sender: UIStepper) {
+        votesLabel.text = "Votes: " + String(sender.value)
     }
     
 }
