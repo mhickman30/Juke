@@ -1,16 +1,22 @@
 //
-//  PartyPlaylistTableViewController.swift
+//  NewPartyTableViewController.swift
 //  Juke
 //
-//  Created by Student on 5/4/18.
+//  Created by Student on 5/17/18.
 //  Copyright © 2018 Matt Hickman. All rights reserved.
 //
 
 import UIKit
 
-class PartyPlaylistTableViewController: UITableViewController {
+class NewPartyTableViewController: UITableViewController {
 
-    var parties: [Party] = [Party(name: "Practice Party 1", playlist: [], description: "1st practice", hostName: "Matt Hickman"), Party(name: "Practice Party 2", playlist: [], description: "2nd practice", hostName: "Matt Hickman"), Party(name: "Practice Party 3", playlist: [], description: "3rd practice", hostName: "Matt Hickman")]
+    @IBOutlet weak var partyNameTextField: UITextField!
+    @IBOutlet weak var hostNameTextField: UITextField!
+    @IBOutlet weak var playlistTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,39 +28,15 @@ class PartyPlaylistTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func unwindToPartyVC(segue:UIStoryboardSegue) {
-        //performSegue(withIdentifier: "cancelNewParty", sender: self)
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return parties.count
-        } else {
-            return 0
-        }
-    }
-
+    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        let party = parties[indexPath.row]
-        cell.textLabel?.text = party.name
-        cell.detailTextLabel?.text = "By \(party.hostName ?? "Name")"
 
         return cell
     }
+    */
 
     /*
     // Override to support conditional editing of the table view.
