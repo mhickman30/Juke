@@ -13,12 +13,10 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var firstnameLabel: UILabel!
     @IBOutlet weak var lastnameLabel: UILabel!
+    @IBOutlet weak var fullnameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var changePicutreButton: UIButton!
-    
-    var username: String?
-    var password: String?
-    
+
     var user: User?
     
     func updateView() {
@@ -33,8 +31,9 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         }
         
         usernameLabel.text = "@" + (user?.username)!
-        firstnameLabel.text = user?.firstName
-        lastnameLabel.text = user?.lastName
+        //firstnameLabel.text = user?.firstName
+        //lastnameLabel.text = user?.lastName
+        fullnameLabel.text = (user?.firstName)! + " " + (user?.lastName)!
         emailLabel.text = user?.email
     }
     
@@ -83,12 +82,6 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
-        /*
-        usernameLabel.text = "@" + username!
-        firstnameLabel.text = user?.firstName
-        lastnameLabel.text = user?.lastName
-        emailLabel.text = user?.email
-        */
     }
 
     override func didReceiveMemoryWarning() {

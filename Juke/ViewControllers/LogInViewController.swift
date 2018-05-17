@@ -42,13 +42,6 @@ class LogInViewController: UIViewController {
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-    
-
-    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "loginSegue") {
@@ -68,13 +61,9 @@ class LogInViewController: UIViewController {
             if let tabViewController = segue.destination as? UITabBarController {
                 let destinationVC = tabViewController.viewControllers!.first as! ProfileViewController
                 
-                destinationVC.username = usernameTextField.text!
-                
-                
-                //if let username = usernameTextField.text {
-                //    profileViewController.usernameLabel.text! = username
-                //}
-                //let password = passwordTextField.text
+            
+                destinationVC.user = User(username: usernameTextField.text!, password: passwordTextField.text!, email: "practice@email.com", firstname: "Practice", lastname: "Name")
+
                 
                 
             }
