@@ -11,16 +11,14 @@ import UIKit
 class SinglePlaylistTableViewController: UITableViewController {
 
     var songs = [Song]()
+    var party: Party?
     
+    @IBOutlet weak var playlistName: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        playlistName.title = party?.name
+        
     }
 
     override func didReceiveMemoryWarning() {
