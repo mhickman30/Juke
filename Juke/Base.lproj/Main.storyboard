@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -318,8 +319,8 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hT3-eF-ve9" firstAttribute="centerX" secondItem="1IT-Gt-dVw" secondAttribute="centerX" constant="150" id="UyC-eW-5b4"/>
-                                                <constraint firstItem="hT3-eF-ve9" firstAttribute="centerY" secondItem="1IT-Gt-dVw" secondAttribute="centerY" id="uYN-Yq-7Js"/>
+                                                <constraint firstItem="hT3-eF-ve9" firstAttribute="centerY" secondItem="1IT-Gt-dVw" secondAttribute="centerY" id="E1s-9p-SRe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hT3-eF-ve9" secondAttribute="trailing" constant="-3" id="Z6F-fj-UQg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -344,8 +345,8 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="z9C-bK-EPH" firstAttribute="centerY" secondItem="k2c-bg-Ndt" secondAttribute="centerY" id="hfF-HL-epZ"/>
-                                                <constraint firstItem="z9C-bK-EPH" firstAttribute="centerX" secondItem="k2c-bg-Ndt" secondAttribute="centerX" constant="150" id="qNW-XG-Tbi"/>
+                                                <constraint firstItem="z9C-bK-EPH" firstAttribute="centerY" secondItem="k2c-bg-Ndt" secondAttribute="centerY" id="ohl-dm-gft"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="z9C-bK-EPH" secondAttribute="trailing" constant="-3" id="sou-ZJ-Uee"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -370,8 +371,8 @@
                                                 </switch>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3xH-u6-FN4" firstAttribute="centerY" secondItem="bmo-xr-E9r" secondAttribute="centerY" id="2xa-0u-yix"/>
-                                                <constraint firstItem="3xH-u6-FN4" firstAttribute="leading" secondItem="7ak-rO-5pz" secondAttribute="leading" constant="315" id="tBN-2X-xaD"/>
+                                                <constraint firstItem="3xH-u6-FN4" firstAttribute="centerY" secondItem="bmo-xr-E9r" secondAttribute="centerY" id="Ae4-hF-VpA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="3xH-u6-FN4" secondAttribute="trailing" constant="-5" id="a9h-Pq-oJQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -393,11 +394,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="download-1" id="XGh-tE-8Eu">
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="images" id="XGh-tE-8Eu">
                                                     <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="70n-BQ-Ahy">
+                                                    <rect key="frame" x="315" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.18357318519999999" green="0.43695946800000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="thumbTintColor" red="1" green="0.23377426200000001" blue="0.1709318567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </switch>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="70n-BQ-Ahy" firstAttribute="centerY" secondItem="nm2-vT-mes" secondAttribute="centerY" id="QeB-Sd-bQi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="70n-BQ-Ahy" secondAttribute="trailing" constant="-5" id="jFC-pF-KhN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="akZ-pL-ofq" imageView="WbA-9L-gTE" style="IBUITableViewCellStyleDefault" id="bD7-xH-2aj">
@@ -418,7 +428,16 @@
                                                     <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5U3-Zz-uEl">
+                                                    <rect key="frame" x="315" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.18357318519999999" green="0.43695946800000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="thumbTintColor" red="1" green="0.23377426200000001" blue="0.1709318567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </switch>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5U3-Zz-uEl" firstAttribute="centerY" secondItem="akZ-pL-ofq" secondAttribute="centerY" id="JzL-rc-7a3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5U3-Zz-uEl" secondAttribute="trailing" constant="-5" id="gHH-y8-moL"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ufy-pe-Ir6" imageView="sE4-oB-fnj" style="IBUITableViewCellStyleDefault" id="Zeh-Rj-NcZ">
@@ -439,7 +458,16 @@
                                                     <rect key="frame" x="16" y="0.0" width="44" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Axm-Zj-WO7">
+                                                    <rect key="frame" x="315" y="6" width="51" height="31"/>
+                                                    <color key="onTintColor" red="0.18357318519999999" green="0.43695946800000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="thumbTintColor" red="1" green="0.23377426200000001" blue="0.1709318567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </switch>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Axm-Zj-WO7" secondAttribute="trailing" constant="-5" id="7H0-yF-llE"/>
+                                                <constraint firstItem="Axm-Zj-WO7" firstAttribute="centerY" secondItem="ufy-pe-Ir6" secondAttribute="centerY" id="rRH-pj-w4I"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -1020,10 +1048,10 @@
     <resources>
         <image name="Screen Shot 2018-05-14 at 2.01.26 PM" width="1298" height="834"/>
         <image name="download" width="121" height="121"/>
-        <image name="download-1" width="122" height="122"/>
         <image name="download-2" width="123" height="123"/>
         <image name="download-3" width="134" height="134"/>
         <image name="gear-7" width="30" height="30"/>
+        <image name="images" width="175" height="173"/>
         <image name="man-7" width="29" height="30"/>
         <image name="music-7" width="30" height="30"/>
     </resources>
