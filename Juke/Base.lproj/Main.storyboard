@@ -381,9 +381,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="egz-CU-X4K" kind="showDetail" id="s34-ia-Y8H"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -645,7 +642,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="New Party" id="tMm-tV-VuZ">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="qQt-xl-cdu"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jST-iL-LEI"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jST-iL-LEI">
+                            <connections>
+                                <segue destination="OyP-ys-9zR" kind="showDetail" id="CNT-p6-nTT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="ayr-nx-dTR" id="8SD-3Q-TWd"/>
@@ -690,8 +691,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCellIdentifier" textLabel="J6B-am-dJp" detailTextLabel="47O-Ws-lee" imageView="RGi-uG-l2F" style="IBUITableViewCellStyleSubtitle" id="UND-CL-ZFW" customClass="SongCell" customModule="Juke" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCellIdentifier" textLabel="J6B-am-dJp" detailTextLabel="47O-Ws-lee" imageView="RGi-uG-l2F" rowHeight="59" style="IBUITableViewCellStyleSubtitle" id="UND-CL-ZFW" customClass="SongCell" customModule="Juke" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="right" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UND-CL-ZFW" id="PYF-1N-kQI">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -715,12 +716,35 @@
                                             <rect key="frame" x="16" y="0.0" width="44" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-8R-4AE">
+                                            <rect key="frame" x="120" y="7" width="394.5" height="49.5"/>
+                                            <subviews>
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-Eq-dVG">
+                                                    <rect key="frame" x="150" y="0.0" width="94" height="29"/>
+                                                    <color key="backgroundColor" red="0.18357318521127108" green="0.43695946803152996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <connections>
+                                                        <action selector="voteStepper:" destination="UND-CL-ZFW" eventType="valueChanged" id="ZIc-Du-rzl"/>
+                                                    </connections>
+                                                </stepper>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" Votes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giC-0k-9jl">
+                                                    <rect key="frame" x="171" y="29" width="52.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zcr-Eq-dVG" firstAttribute="leading" secondItem="t7G-8R-4AE" secondAttribute="leading" constant="150" id="p3v-hw-ffU"/>
+                                            </constraints>
+                                        </stackView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="artistLabel" destination="47O-Ws-lee" id="Kqf-M4-NWr"/>
                                     <outlet property="songIcon" destination="RGi-uG-l2F" id="Skc-QF-iuq"/>
                                     <outlet property="songLabel" destination="J6B-am-dJp" id="AQj-ec-0mk"/>
+                                    <outlet property="votesLabel" destination="giC-0k-9jl" id="nAy-dX-LfM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -744,7 +768,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2H-3y-xih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="3465"/>
+            <point key="canvasLocation" x="1389.5999999999999" y="3464.617691154423"/>
         </scene>
         <!--Add Song-->
         <scene sceneID="5bj-nY-Sxy">

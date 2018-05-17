@@ -25,7 +25,7 @@ class addPartyTableViewController: UITableViewController {
             party.name = partyNametextfield.text!
             party.description = descriptionTextField.text!
         }
-        ubdatesavebutt()
+        updatesavebutt()
     }
     
     
@@ -39,14 +39,14 @@ class addPartyTableViewController: UITableViewController {
         party = Party(name: partyname, playlist: [playlistNameTextField.text!], description: des, hostName: hostname)
     }
     
-    func ubdatesavebutt () {
+    func updatesavebutt () {
         let partyName = partyNametextfield.text ?? ""
         let hostName = hostNametextfield.text ?? ""
         saveButton.isEnabled = !partyName.isEmpty && !hostName.isEmpty
     }
     
     @IBAction func ediittex(_ sender: UITextField) {
-        ubdatesavebutt()
+        updatesavebutt()
     }
 
 
