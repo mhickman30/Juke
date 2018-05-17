@@ -808,7 +808,12 @@
                                 <segue destination="d3w-gk-hhE" kind="unwind" identifier="cancelNewParty" unwindAction="unwindToPartyVCWithSegue:" id="nKM-Gc-4nJ"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ufb-mo-7yg"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ufb-mo-7yg">
+                            <connections>
+                                <action selector="unwindToPartyVCWithSegue:" destination="Sow-0o-ZIR" id="mwN-lO-3Bx"/>
+                                <segue destination="d3w-gk-hhE" kind="unwind" unwindAction="unwindFromNewPartyTableViewController:" id="0VS-WI-lhm"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="tr4-xe-ANq" id="rox-qj-kXU"/>

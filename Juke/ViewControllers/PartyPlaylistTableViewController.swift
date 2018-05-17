@@ -27,9 +27,7 @@ class PartyPlaylistTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func unwindToPartyVC(segue:UIStoryboardSegue) {
-        //performSegue(withIdentifier: "cancelNewParty", sender: self)
-    }
+    
 
     // MARK: - Table view data source
 
@@ -54,6 +52,16 @@ class PartyPlaylistTableViewController: UITableViewController {
         cell.detailTextLabel?.text = "By \(party.hostName ?? "Name")"
 
         return cell
+    }
+    
+    @IBAction func unwindFromNewPartyTableViewController(_ sender: UIStoryboardSegue){
+        if sender.source is NewPartyTableViewController {
+            if let senderVC = sender.source as? NewPartyTableViewController {
+                print(senderVC.party)
+                parties.append(senderVC.party!)
+            }
+            tableView.reloadData()
+        }
     }
 
     /*
