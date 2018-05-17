@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -436,6 +436,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0i-0e-uK7">
                                                 <rect key="frame" x="100" y="0.0" width="175" height="152"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Change Picture "/>
                                                 <connections>
                                                     <action selector="changePictureButtonTapped:" destination="5DH-Ty-s58" eventType="touchUpInside" id="7K0-sE-PfM"/>
@@ -647,6 +648,34 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Rating" id="GVE-qG-ORt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="sOc-Yd-Gqz">
+                                        <rect key="frame" x="0.0" y="455.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sOc-Yd-Gqz" id="UL0-SL-6Dg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoG-8h-hHD">
+                                                    <rect key="frame" x="16" y="9" width="202" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHZ-ua-oUU">
+                                                    <rect key="frame" x="312" y="6" width="49" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="switch:" destination="Sow-0o-ZIR" eventType="valueChanged" id="lyX-VZ-FVD"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="Sow-0o-ZIR" id="Wtz-xI-jrD"/>
@@ -664,6 +693,7 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="tr4-xe-ANq" id="rox-qj-kXU"/>
                         <outlet property="hostNameTextField" destination="a09-B3-yLI" id="Htf-VZ-P8Z"/>
+                        <outlet property="output" destination="EoG-8h-hHD" id="THv-wW-36t"/>
                         <outlet property="partyNameTextField" destination="WQ4-ea-Ujh" id="mu3-vE-phY"/>
                         <outlet property="playlistTextField" destination="rjs-Hs-MWF" id="5FL-Aq-0NR"/>
                         <outlet property="saveButton" destination="ufb-mo-7yg" id="20a-d2-bn8"/>
@@ -672,7 +702,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nb4-6C-8VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="d3w-gk-hhE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2182" y="2665"/>
+            <point key="canvasLocation" x="2181.5999999999999" y="2664.9175412293857"/>
         </scene>
         <!--Playlist-->
         <scene sceneID="LQI-O4-rrU">
@@ -709,7 +739,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-8R-4AE">
-                                            <rect key="frame" x="120" y="7" width="394.5" height="49.5"/>
+                                            <rect key="frame" x="120" y="7" width="394" height="49.5"/>
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-Eq-dVG">
                                                     <rect key="frame" x="150" y="0.0" width="94" height="29"/>
@@ -904,7 +934,6 @@
         <image name="music-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jHZ-4k-gRa"/>
         <segue reference="jCK-kF-FED"/>
         <segue reference="OnT-fD-qnB"/>
         <segue reference="VhB-ns-QHv"/>

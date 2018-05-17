@@ -16,6 +16,18 @@ class NewPartyTableViewController: UITableViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    @IBOutlet weak var output: UILabel!
+    
+    @IBAction func `switch`(_ sender: UISwitch) {
+        if (sender.isOn==true) {
+            output.text = "18+"
+        }
+        else {
+            output.text = "All Ages"
+        }
+        
+    }
+    
     
     
     override func viewDidLoad() {
