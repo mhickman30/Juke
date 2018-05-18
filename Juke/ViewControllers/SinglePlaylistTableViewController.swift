@@ -9,16 +9,18 @@
 import UIKit
 
 class SinglePlaylistTableViewController: UITableViewController {
-
-    var songs = [Song]()
+    //let image = UIImagePNGRepresentation(#imageLiteral(resourceName: "download"))
+    var songs: [Song] = [Song(title: "Jukebox Hero", artist: "Foreigner", upvotes: 0, downvotes: 0, imageData: UIImagePNGRepresentation(#imageLiteral(resourceName: "download")))]
+    
     var party: Party?
     
     @IBOutlet weak var playlistName: UINavigationItem!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        playlistName.title = party?.name
         
+        playlistName.title = party?.name
+        print(party?.name)
+        super.viewDidLoad()
     }
 
     override func didReceiveMemoryWarning() {
