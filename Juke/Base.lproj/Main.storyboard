@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -892,7 +893,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-8R-4AE">
-                                            <rect key="frame" x="120" y="7" width="394" height="49.5"/>
+                                            <rect key="frame" x="120" y="7" width="394.5" height="49.5"/>
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-Eq-dVG">
                                                     <rect key="frame" x="150" y="0.0" width="94" height="29"/>
