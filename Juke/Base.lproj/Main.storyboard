@@ -624,6 +624,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="58Y-XO-ggk" firstAttribute="top" secondItem="KfC-HT-DsV" secondAttribute="top" constant="20" id="JSU-P4-a2f"/>
                             <constraint firstItem="KfC-HT-DsV" firstAttribute="trailing" secondItem="58Y-XO-ggk" secondAttribute="trailing" id="Pz0-vn-2Wb"/>
