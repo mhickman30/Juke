@@ -531,20 +531,11 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msm-EM-gVq">
-                                            <rect key="frame" x="306" y="19" width="30" height="6"/>
-                                            <state key="normal" title="Edit"/>
-                                            <connections>
-                                                <segue destination="egz-CU-X4K" kind="showDetail" identifier="toSongs" id="wfa-gx-4nv"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Msm-EM-gVq" firstAttribute="top" secondItem="7Ko-fm-9g5" secondAttribute="topMargin" constant="8" id="V8x-TX-yTb"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="Msm-EM-gVq" secondAttribute="bottom" constant="8" id="Zjm-cm-pkK"/>
-                                        <constraint firstItem="Msm-EM-gVq" firstAttribute="leading" secondItem="epd-Gd-xo4" secondAttribute="trailing" constant="200" id="nRr-nl-c0T"/>
-                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="egz-CU-X4K" kind="presentation" identifier="toSongs" id="jR6-f2-gg7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -633,7 +624,6 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="58Y-XO-ggk" firstAttribute="top" secondItem="KfC-HT-DsV" secondAttribute="top" constant="20" id="JSU-P4-a2f"/>
                             <constraint firstItem="KfC-HT-DsV" firstAttribute="trailing" secondItem="58Y-XO-ggk" secondAttribute="trailing" id="Pz0-vn-2Wb"/>
@@ -921,7 +911,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wc3-lk-xvh">
                             <connections>
-                                <segue destination="spy-Kw-Dar" kind="presentation" id="nRS-X7-pJz"/>
+                                <segue destination="spy-Kw-Dar" kind="presentation" identifier="toSongs" id="nRS-X7-pJz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1075,6 +1065,7 @@
         <image name="music-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jR6-f2-gg7"/>
         <segue reference="0G0-hY-J8k"/>
         <segue reference="OnT-fD-qnB"/>
         <segue reference="VhB-ns-QHv"/>
