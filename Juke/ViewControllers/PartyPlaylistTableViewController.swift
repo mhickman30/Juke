@@ -43,7 +43,7 @@ class PartyPlaylistTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCell", for: indexPath)
         let party = parties[indexPath.row]
         cell.textLabel?.text = party.name
-        cell.detailTextLabel?.text = "By \(party.hostName ?? "Name")"
+        cell.detailTextLabel?.text = "By \(party.hostName ?? "Host Unkown")"
 
         return cell
     }

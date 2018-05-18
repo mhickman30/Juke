@@ -26,7 +26,6 @@ class NewSongTableViewController: UITableViewController {
         saveButton.isEnabled = !text.isEmpty
     }
     
-    
     @IBAction func nameTextFieldChanged(_ sender: Any) {
         updateSaveButton()
     }

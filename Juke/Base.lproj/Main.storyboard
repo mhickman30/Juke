@@ -717,6 +717,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="nameFieldChanged:" destination="Sow-0o-ZIR" eventType="editingChanged" id="U1m-cP-8zw"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>

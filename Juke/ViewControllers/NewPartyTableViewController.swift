@@ -31,14 +31,21 @@ class NewPartyTableViewController: UITableViewController {
     }
     @IBAction func unwindSegue(_ sender: UIStoryboard) {
         
-        }
+    }
     
+    func updateSaveButton() {
+        let text = partyNameTextField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateSaveButton()
     }
     
+    @IBAction func nameFieldChanged(_ sender: UITextField) {
+        updateSaveButton()
+    }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,7 +59,6 @@ class NewPartyTableViewController: UITableViewController {
         let description = descriptionTextField.text ?? "No Description"
         
         party = Party(name: partyName, playlist: [playlist], description: description, hostName: hostName)
-        
     }
   
 
@@ -100,9 +106,4 @@ class NewPartyTableViewController: UITableViewController {
         return true
     }
     */
-
-
-  
- 
-
 }
