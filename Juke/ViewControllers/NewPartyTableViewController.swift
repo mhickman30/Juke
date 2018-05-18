@@ -29,7 +29,9 @@ class NewPartyTableViewController: UITableViewController {
         }
         
     }
-    
+    @IBAction func unwindSegue(_ sender: UIStoryboard) {
+        
+        }
     
     
     override func viewDidLoad() {

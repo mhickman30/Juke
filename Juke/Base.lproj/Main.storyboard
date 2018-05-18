@@ -837,7 +837,7 @@
                     <navigationItem key="navigationItem" title="New Party" largeTitleDisplayMode="always" id="NYN-0p-bzW">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lw6-Hk-kqp">
                             <connections>
-                                <segue destination="OyP-ys-9zR" kind="show" id="9YM-Yr-Dcj"/>
+                                <segue destination="d3w-gk-hhE" kind="unwind" unwindAction="unwindFromNewPartyTableViewController:" id="jZ2-Iv-pkt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ufb-mo-7yg">
@@ -1098,6 +1098,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="0G0-hY-J8k"/>
         <segue reference="OnT-fD-qnB"/>
-        <segue reference="9YM-Yr-Dcj"/>
+        <segue reference="VhB-ns-QHv"/>
     </inferredMetricsTieBreakers>
 </document>
