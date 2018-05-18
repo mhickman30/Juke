@@ -100,12 +100,12 @@ class PartyPlaylistTableViewController: UITableViewController {
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSongs" {
-            if let navigationController = segue.destination as? UINavigationController {
-                let destinationVC = navigationController.viewControllers.first as! SinglePlaylistTableViewController
-                let indexPath = tableView.indexPathForSelectedRow!
-                let selectedParty = parties[indexPath.row]
-                destinationVC.party = selectedParty
-            }
+            let destinationVC = segue.destination as! SinglePlaylistTableViewController
+            let indexPath = tableView.indexPathForSelectedRow!
+            let selectedParty = parties[indexPath.row]
+            destinationVC.party = selectedParty
+            print(selectedParty.name)
+            segue.destination.navigationItem.title = selectedParty.name
         }
     }
  

@@ -11,8 +11,6 @@ import UIKit
 class ProfileViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var firstnameLabel: UILabel!
-    @IBOutlet weak var lastnameLabel: UILabel!
     @IBOutlet weak var fullnameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var changePicutreButton: UIButton!
@@ -31,8 +29,6 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         }
         
         usernameLabel.text = "@" + (user?.username)!
-        //firstnameLabel.text = user?.firstName
-        //lastnameLabel.text = user?.lastName
         fullnameLabel.text = (user?.firstName)! + " " + (user?.lastName)!
         emailLabel.text = user?.email
     }
@@ -84,10 +80,6 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate, U
         updateView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

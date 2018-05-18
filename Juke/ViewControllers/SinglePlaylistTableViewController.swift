@@ -15,7 +15,7 @@ class SinglePlaylistTableViewController: UITableViewController {
     
     var party: Party?
     
-    var songs: [Song] = [Song(title: "Jukebox Hero", artist: "Foreigner", upvotes: 0, downvotes: 0, imageData: UIImagePNGRepresentation(#imageLiteral(resourceName: "download")))]
+    var songs: [Song] = [Song(title: "Jukebox Hero", artist: "Foreigner", upvotes: 0, downvotes: 0, imageData: UIImagePNGRepresentation(#imageLiteral(resourceName: "download"))), Song(title: "God's Plan", artist: "Drake", upvotes: 0, downvotes: 0, imageData: UIImagePNGRepresentation(#imageLiteral(resourceName: "download")))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
