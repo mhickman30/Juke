@@ -837,7 +837,7 @@
                     <navigationItem key="navigationItem" title="New Party" largeTitleDisplayMode="always" id="NYN-0p-bzW">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lw6-Hk-kqp">
                             <connections>
-                                <segue destination="d3w-gk-hhE" kind="unwind" identifier="cancelNewParty" unwindAction="unwindToPartyVCWithSegue:" id="nKM-Gc-4nJ"/>
+                                <segue destination="OyP-ys-9zR" kind="show" id="9YM-Yr-Dcj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ufb-mo-7yg">
@@ -898,7 +898,7 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-8R-4AE">
                                             <rect key="frame" x="271" y="7" width="94" height="50"/>
                                             <subviews>
-                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-Eq-dVG">
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-Eq-dVG">
                                                     <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
                                                     <color key="backgroundColor" red="0.18357318521127108" green="0.43695946803152996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -906,7 +906,7 @@
                                                         <action selector="voteStepper:" destination="UND-CL-ZFW" eventType="valueChanged" id="ZIc-Du-rzl"/>
                                                     </connections>
                                                 </stepper>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" Votes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giC-0k-9jl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Votes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giC-0k-9jl">
                                                     <rect key="frame" x="21" y="29" width="52.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1096,9 +1096,8 @@
         <image name="music-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jR6-f2-gg7"/>
         <segue reference="0G0-hY-J8k"/>
         <segue reference="OnT-fD-qnB"/>
-        <segue reference="VhB-ns-QHv"/>
+        <segue reference="9YM-Yr-Dcj"/>
     </inferredMetricsTieBreakers>
 </document>
