@@ -854,13 +854,13 @@
                     <navigationItem key="navigationItem" title="New Party" largeTitleDisplayMode="always" id="NYN-0p-bzW">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lw6-Hk-kqp">
                             <connections>
-                                <segue destination="d3w-gk-hhE" kind="unwind" unwindAction="unwindFromNewPartyTableViewController:" id="jZ2-Iv-pkt"/>
+                                <segue destination="d3w-gk-hhE" kind="unwind" identifier="cancelParty" unwindAction="unwindFromNewPartyTableViewController:" id="HVs-Vg-XsG"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="ufb-mo-7yg">
                             <connections>
                                 <action selector="unwindToPartyVCWithSegue:" destination="Sow-0o-ZIR" id="mwN-lO-3Bx"/>
-                                <segue destination="d3w-gk-hhE" kind="unwind" unwindAction="unwindFromNewPartyTableViewController:" id="0VS-WI-lhm"/>
+                                <segue destination="d3w-gk-hhE" kind="unwind" identifier="saveParty" unwindAction="unwindFromNewPartyTableViewController:" id="by9-lU-mkT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

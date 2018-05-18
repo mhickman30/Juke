@@ -49,9 +49,8 @@ class NewPartyTableViewController: UITableViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //super.prepare(for: segue, sender: sender)
-        
-        //guard segue.identifier == "saveUnwind" else { return }
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "saveParty" else { return }
         
         let partyName = partyNameTextField.text ?? "No Name"
         let hostName = hostNameTextField.text ?? "No Host"

@@ -32,12 +32,10 @@ class NewSongTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        guard segue.identifier == "saveUnwind" else {return}
-        
+        guard segue.identifier == "saveSong" else {return}
         let title = nameTextField.text ?? "No Title"
         let artist = artistTextField.text ?? "Unknown Artist"
         let image = UIImagePNGRepresentation(#imageLiteral(resourceName: "download"))
-        
         song = Song(title: title, artist: artist, upvotes: 0, downvotes: 0, imageData: image)
     }
 
