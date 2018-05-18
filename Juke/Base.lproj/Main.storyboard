@@ -1096,6 +1096,7 @@
         <image name="music-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="jR6-f2-gg7"/>
         <segue reference="0G0-hY-J8k"/>
         <segue reference="OnT-fD-qnB"/>
         <segue reference="VhB-ns-QHv"/>

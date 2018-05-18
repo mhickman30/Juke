@@ -12,6 +12,13 @@ class PartyPlaylistTableViewController: UITableViewController {
 
     var parties: [Party] = [Party(name: "Practice Party 1", playlist: [], description: "1st practice", hostName: "Matt Hickman"), Party(name: "Practice Party 2", playlist: [], description: "2nd practice", hostName: "Matt Hickman"), Party(name: "Practice Party 3", playlist: [], description: "3rd practice", hostName: "Matt Hickman")]
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            parties.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
