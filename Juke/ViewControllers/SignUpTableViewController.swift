@@ -19,6 +19,10 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var emailTextField: UITextField!
     
     
+    @IBOutlet weak var cancelbutton: UIButton!
+    @IBAction func cancelTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func signupButtonPressed(_ sender: UIButton) {
         
     }

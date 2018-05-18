@@ -59,7 +59,6 @@ class NewPartyTableViewController: UITableViewController {
         
         party = Party(name: partyName, playlist: [playlist], description: description, hostName: hostName)
     }
-  
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

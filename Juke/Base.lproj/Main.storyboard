@@ -270,6 +270,34 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="JqP-jm-dL9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="egR-68-gjj">
+                                        <rect key="frame" x="0.0" y="615.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="egR-68-gjj" id="2bg-ep-uIo">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMj-qL-Wef">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <state key="normal" title="Cancel"/>
+                                                    <connections>
+                                                        <action selector="cancelTapped:" destination="lQO-TL-54D" eventType="touchUpInside" id="czD-4M-oR3"/>
+                                                        <action selector="signupButtonPressed:" destination="lQO-TL-54D" eventType="touchUpInside" id="oLj-ZG-xM5"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="aMj-qL-Wef" secondAttribute="trailing" id="OBN-PK-9hR"/>
+                                                <constraint firstAttribute="bottom" secondItem="aMj-qL-Wef" secondAttribute="bottom" id="dkx-yo-bwZ"/>
+                                                <constraint firstItem="aMj-qL-Wef" firstAttribute="top" secondItem="2bg-ep-uIo" secondAttribute="top" id="oid-NY-LOg"/>
+                                                <constraint firstItem="aMj-qL-Wef" firstAttribute="leading" secondItem="2bg-ep-uIo" secondAttribute="leading" id="ucQ-cq-dFO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="lQO-TL-54D" id="217-gd-3Zc"/>
@@ -277,6 +305,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="cancelbutton" destination="aMj-qL-Wef" id="jFy-of-aXb"/>
                         <outlet property="emailTextField" destination="8NF-6p-4rB" id="G8w-MO-Tai"/>
                         <outlet property="firstNameTextField" destination="8yx-CK-nvk" id="fwV-ka-zuW"/>
                         <outlet property="lastNameTextField" destination="p5e-YV-rcI" id="xv9-Yv-uCs"/>
@@ -296,6 +325,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.12427905946969986" green="0.060866214334964752" blue="0.41910064220428467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N6Y-Qm-bee">
+                            <rect key="frame" x="0.0" y="373" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Log Out"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="TPx-Bv-zb8"/>
+                            </connections>
+                        </button>
                         <sections>
                             <tableViewSection id="doB-Hu-OXu">
                                 <cells>
@@ -483,7 +521,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94v-W9-3Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2183" y="1854"/>
+            <point key="canvasLocation" x="978" y="796"/>
         </scene>
         <!--Settings-->
         <scene sceneID="jp6-HP-7ad">
@@ -876,7 +914,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nb4-6C-8VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="d3w-gk-hhE" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2182" y="2654"/>
+            <point key="canvasLocation" x="2065" y="2646"/>
         </scene>
         <!--Single Playlist Table View Controller-->
         <scene sceneID="LQI-O4-rrU">
