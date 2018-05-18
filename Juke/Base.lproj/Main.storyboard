@@ -533,6 +533,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="egz-CU-X4K" kind="presentation" identifier="toSongs" id="jR6-f2-gg7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -550,7 +553,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Mo-oc-62Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="326" y="2665"/>
+            <point key="canvasLocation" x="325.60000000000002" y="2664.9175412293857"/>
         </scene>
         <!--Parties-->
         <scene sceneID="AvW-K8-LYc">
@@ -892,11 +895,11 @@
                                             <rect key="frame" x="16" y="0.0" width="59" height="58.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-8R-4AE">
-                                            <rect key="frame" x="120" y="7" width="394.5" height="49.5"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t7G-8R-4AE">
+                                            <rect key="frame" x="271" y="7" width="94" height="50"/>
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-3" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-Eq-dVG">
-                                                    <rect key="frame" x="150" y="0.0" width="94" height="29"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
                                                     <color key="backgroundColor" red="0.18357318521127108" green="0.43695946803152996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <connections>
@@ -904,17 +907,19 @@
                                                     </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" Votes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giC-0k-9jl">
-                                                    <rect key="frame" x="171" y="29" width="52.5" height="20.5"/>
+                                                    <rect key="frame" x="21" y="29" width="52.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="zcr-Eq-dVG" firstAttribute="leading" secondItem="t7G-8R-4AE" secondAttribute="leading" constant="150" id="p3v-hw-ffU"/>
-                                            </constraints>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="t7G-8R-4AE" firstAttribute="top" secondItem="PYF-1N-kQI" secondAttribute="topMargin" constant="-4" id="FGR-eK-jo1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="t7G-8R-4AE" secondAttribute="bottom" constant="-9" id="efw-Bm-syu"/>
+                                        <constraint firstItem="t7G-8R-4AE" firstAttribute="leading" secondItem="47O-Ws-lee" secondAttribute="trailing" constant="150" id="vxd-Zf-1gt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="artistLabel" destination="47O-Ws-lee" id="Kqf-M4-NWr"/>
@@ -937,7 +942,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="wc3-lk-xvh">
                             <connections>
-                                <segue destination="spy-Kw-Dar" kind="showDetail" id="jHZ-4k-gRa"/>
+                                <segue destination="spy-Kw-Dar" kind="presentation" identifier="toSongs" id="nRS-X7-pJz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1059,7 +1064,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kuP-Ci-O19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="3465"/>
+            <point key="canvasLocation" x="326" y="3465"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vzW-0C-Xsn">
@@ -1091,7 +1096,8 @@
         <image name="music-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jCK-kF-FED"/>
+        <segue reference="jR6-f2-gg7"/>
+        <segue reference="0G0-hY-J8k"/>
         <segue reference="OnT-fD-qnB"/>
         <segue reference="VhB-ns-QHv"/>
     </inferredMetricsTieBreakers>
