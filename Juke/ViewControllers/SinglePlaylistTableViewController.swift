@@ -9,24 +9,39 @@
 import UIKit
 
 class SinglePlaylistTableViewController: UITableViewController {
-    //let image = UIImagePNGRepresentation(#imageLiteral(resourceName: "download"))
-    var songs: [Song] = [Song(title: "Jukebox Hero", artist: "Foreigner", upvotes: 0, downvotes: 0, imageData: UIImagePNGRepresentation(#imageLiteral(resourceName: "download")))]
-    
-    var party: Party?
+
     
     @IBOutlet weak var playlistName: UINavigationItem!
     
+    var party: Party?
+    
+    var songs: [Song] = [Song(title: "Jukebox Hero", artist: "Foreigner", upvotes: 0, downvotes: 0, imageData: UIImagePNGRepresentation(#imageLiteral(resourceName: "download")))]
+    
     override func viewDidLoad() {
-        
-        playlistName.title = party?.name
-        print(party?.name)
         super.viewDidLoad()
+        
+        if let currentParty = party {
+            playlistName.title = currentParty.name
+            print(currentParty.name)
+        } else {
+            print("Error. No current party")
+        }
+    }
+    
+    @IBAction func unwindFromNewSong(_ sender: UIStoryboardSegue){
+        if sender.source is NewSongTableViewController {
+            if let senderVC = sender.source as? NewSongTableViewController {
+                if let newSong = senderVC.song {
+                    print(newSong.title)
+                    songs.append(newSong)
+                } else {
+                    print("There was no new song entered")
+                }
+            }
+            tableView.reloadData()
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     // MARK: - Table view data source
     /*

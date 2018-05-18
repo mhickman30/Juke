@@ -31,5 +31,13 @@ struct StoreItem {
         
         self.description = json["description"] as? String ?? json["longDescription"] as? String ?? ""
     }
+    
+    init(name: String, artist: String, description: String, kind: String, artworkURL: URL) {
+        self.name = name
+        self.artist = name
+        self.description = description
+        self.kind = kind
+        self.artworkURL = artworkURL
+    }
 }
 

@@ -20,7 +20,7 @@
 		3FEF2752209D015D00C01A71 /* PartyPlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */; };
 		3FEF2754209D07CD00C01A71 /* NewSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */; };
 		3FF8DBD820AE09CA00258965 /* SinglePlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DBD720AE09CA00258965 /* SinglePlaylistTableViewController.swift */; };
-		3FF8DBDA20AE0DCA00258965 /* AddSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DBD920AE0DCA00258965 /* AddSongTableViewController.swift */; };
+		3FF8DBDA20AE0DCA00258965 /* NOT USED AddSongTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DBD920AE0DCA00258965 /* NOT USED AddSongTableViewController.swift */; };
 		3FF8DBDC20AE17B600258965 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8DBDB20AE17B600258965 /* SongCell.swift */; };
 		410B957B20A3997F00C728E3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410B957A20A3997F00C728E3 /* SettingsTableViewController.swift */; };
 		41A0A337208E7DF00083669E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A0A336208E7DF00083669E /* AppDelegate.swift */; };
@@ -43,7 +43,7 @@
 		3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyPlaylistTableViewController.swift; sourceTree = "<group>"; };
 		3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSongTableViewController.swift; sourceTree = "<group>"; };
 		3FF8DBD720AE09CA00258965 /* SinglePlaylistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlaylistTableViewController.swift; sourceTree = "<group>"; };
-		3FF8DBD920AE0DCA00258965 /* AddSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongTableViewController.swift; sourceTree = "<group>"; };
+		3FF8DBD920AE0DCA00258965 /* NOT USED AddSongTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NOT USED AddSongTableViewController.swift"; sourceTree = "<group>"; };
 		3FF8DBDB20AE17B600258965 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
 		410B957A20A3997F00C728E3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		41A0A333208E7DF00083669E /* Juke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juke.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,10 +68,10 @@
 		3F1D3F95209BB624003724D8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3FF8DBD920AE0DCA00258965 /* AddSongTableViewController.swift */,
 				3FF8DBD720AE09CA00258965 /* SinglePlaylistTableViewController.swift */,
 				3FF8DBDB20AE17B600258965 /* SongCell.swift */,
 				3FEF2753209D07CD00C01A71 /* NewSongTableViewController.swift */,
+				3FF8DBD920AE0DCA00258965 /* NOT USED AddSongTableViewController.swift */,
 				3F22FC9C20AE35A800D4B9DD /* NewPartyTableViewController.swift */,
 				3F08803720AA866300A9148E /* NOT USED addPartyTableViewController.swift */,
 				3FEF2751209D015D00C01A71 /* PartyPlaylistTableViewController.swift */,
@@ -204,7 +204,7 @@
 				3F08803820AA866300A9148E /* NOT USED addPartyTableViewController.swift in Sources */,
 				41A0A337208E7DF00083669E /* AppDelegate.swift in Sources */,
 				3FEF2752209D015D00C01A71 /* PartyPlaylistTableViewController.swift in Sources */,
-				3FF8DBDA20AE0DCA00258965 /* AddSongTableViewController.swift in Sources */,
+				3FF8DBDA20AE0DCA00258965 /* NOT USED AddSongTableViewController.swift in Sources */,
 				3F1D3F94209BB55B003724D8 /* ProfileViewController.swift in Sources */,
 				3FEF2750209CFAC900C01A71 /* Party.swift in Sources */,
 				3FABE518209A578A00A9020A /* User.swift in Sources */,

@@ -21,19 +21,8 @@ class PartyPlaylistTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
 
     // MARK: - Table view data source
@@ -52,8 +41,6 @@ class PartyPlaylistTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PartyCell", for: indexPath)
-
-        // Configure the cell...
         let party = parties[indexPath.row]
         cell.textLabel?.text = party.name
         cell.detailTextLabel?.text = "By \(party.hostName ?? "Name")"
@@ -64,8 +51,12 @@ class PartyPlaylistTableViewController: UITableViewController {
     @IBAction func unwindFromNewPartyTableViewController(_ sender: UIStoryboardSegue){
         if sender.source is NewPartyTableViewController {
             if let senderVC = sender.source as? NewPartyTableViewController {
-                print(senderVC.party)
-                parties.append(senderVC.party!)
+                if let newParty = senderVC.party {
+                    print(newParty.name)
+                    parties.append(newParty)
+                } else {
+                    print("There was no new party entered")
+                }
             }
             tableView.reloadData()
         }
@@ -108,12 +99,13 @@ class PartyPlaylistTableViewController: UITableViewController {
 
   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "toSongs" {
-            let songViewController = segue.destination as! SinglePlaylistTableViewController
-            let indexPath = tableView.indexPathForSelectedRow!
-            let selectedParty = parties[indexPath.row]
-            songViewController.party = selectedParty
+            if let navigationController = segue.destination as? UINavigationController {
+                let destinationVC = navigationController.viewControllers.first as! SinglePlaylistTableViewController
+                let indexPath = tableView.indexPathForSelectedRow!
+                let selectedParty = parties[indexPath.row]
+                destinationVC.party = selectedParty
+            }
         }
     }
  
